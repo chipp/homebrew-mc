@@ -1,4 +1,4 @@
-class MidnightCommander < Formula
+class MidnightCommanderAT4825 < Formula
   desc "Terminal-based visual file manager"
   homepage "https://www.midnight-commander.org/"
   url "https://www.midnight-commander.org/downloads/mc-4.8.25.tar.xz"
@@ -9,14 +9,6 @@ class MidnightCommander < Formula
   livecheck do
     url "https://ftp.osuosl.org/pub/midnightcommander/"
     regex(/href=.*?mc[._-]v?(\d+(?:\.\d+)+)\.t/i)
-  end
-
-  bottle do
-    sha256 arm64_big_sur: "5abcb40119f47df346dd0b2c3a4c101422b594b3c0db2225ee38a3ebb2b7caa0"
-    sha256 big_sur:       "1cf10d6382ee603a2b15735029d31b7bea7bb65f29a50dbbc1c61a828d3cf433"
-    sha256 catalina:      "2c36f252c47b8ecff2fa4afb4191a963af7c3d30a8aeb267a40f967873a01643"
-    sha256 mojave:        "224d6aa6577e51952833ee65888bb99eacb89508dc9ac2f82a0e679b4635d7e3"
-    sha256 high_sierra:   "79c2208b2097941cf3a792f47ad1f280ddbc3add7bd631084484163b7ba14ae9"
   end
 
   head do
